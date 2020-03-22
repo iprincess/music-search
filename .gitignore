@@ -1,0 +1,45 @@
+*.user
+*.suo
+bin/
+obj/
+.vs/
+packages/
+*.pfx
+.svn
+Bin
+*.sln.cache
+_ReSharper.*
+build.log.txt
+distzip
+*/Thumbs.db
+*.ReSharper
+gen
+.metadata
+*.dbmdl
+.git
+.idea
+*.jar
+*.nupkg
+*.min.css
+*.js.map
+
+appsettings.Development.json
+
+node_modules/
+*.code-workspace
+.vscode/
+
+#webpack generated files
+NtentNewsUI/wwwroot/dist/
+
+#don't ignore static-files
+!NtentNewsUI/wwwroot/static-files/
+
+
+#unit test output
+NtentNewsUI/junit.xml
+NtentNewsUI/test_output/
+
+#generated from templates
+NtentNewsUI/Views/Home/Index.cshtml
+NtentNewsUI/Views/Home/Index.Desktop.cshtml

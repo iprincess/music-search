@@ -9,7 +9,9 @@ import {
 import { Header } from './components/header/Header';
 import NotFoundPage from './pages/NotFound';
 import InProgressPage from './pages/InProgress';
-import { SearchPage } from './components/search/SearchPage';
+import { AlbumPage } from './pages/AlbumPage';
+import { ArtistPage } from './pages/ArtistPage';
+import { SongPage } from './pages/SongPage';
 
 export const App = () => {
   const supportsHistory = 'pushState' in window.history;
@@ -22,11 +24,9 @@ export const App = () => {
           <div>
             <Switch>
               <Redirect exact path="/" to="/album" />
-              <Route
-                path={['/artist/:query?', '/song/:query?']}
-                component={InProgressPage}
-              />
-              <Route path="/:searchType/:query?" component={SearchPage} />
+              <Route path="/album/:query?" component={AlbumPage} />
+              <Route path="/artist/:query?" component={ArtistPage} />
+              <Route path="/song/:query?" component={SongPage} />
               <Route component={NotFoundPage} />
             </Switch>
           </div>

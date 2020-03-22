@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const DIST_DIR = path.join(__dirname, "dist");
-const ASSET_PATH = "";
+const ASSET_PATH = "/";
 const SRC_DIR = path.join(__dirname, "src");
 
 const plugins = [

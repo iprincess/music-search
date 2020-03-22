@@ -3,24 +3,24 @@ interface IAlbumResponse extends IMusicResponse<IAlbum> {
 }
 
 interface IAlbum {
-	wrapperType: string;
-	collectionType: string;
-	artistId: number;
-	collectionId: number;
 	amgArtistId: number;
+	artistId: number;
 	artistName: string;
-	collectionName: string;
-	collectionCensoredName: string;
 	artistViewUrl: string;
-	collectionViewUrl: string;
 	artworkUrl60: string;
 	artworkUrl100: string;
+	collectionCensoredName: string;
+	collectionExplicitness: string;
+	collectionId: number;
+	collectionName: string;
 	collectionPrice: number;
-	collectionExplicitness:	string;
-	trackCount: number;
+	collectionType: string;
+	collectionViewUrl: string;
 	copyright: string;
 	country: string;
 	currency: string;
-	releaseDate: string;
 	primaryGenreName: string;
+	releaseDate: string; // "2005-03-01T08:00:00Z"
+	trackCount: number;
+	wrapperType: string;
 }

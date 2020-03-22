@@ -1,22 +1,26 @@
 import React from 'react';
-import { SearchResultItem } from './SearchResultItem';
+import MediaCard from '../shared/mediaCard/MediaCard';
 
-export const SearchResults =(props:{results:any[]}) => {
+export const SearchResults =(props:{mediaCardMap: Function; results:any[]}) => {
 
-  if(props.results === null){
+  if(!props.results) {
     return null;
-
-  } else if (props.results && props.results.length) {
-    const items = props.results.map(
-      (item) => {
-        return <li key={item.collectionId}><SearchResultItem {...item} /></li>
-      }
-    );
-
-    return (
-      <ul className="container container-row">{items}</ul>
-    );
   }
-  return (<p className="no-results">No results found. Please search again.</p>)
 
+  const items = props.results && props.results.map(
+    (item, index) => {
+      const mediaCardProps = props.mediaCardMap(item);
+      return (
+        <li key={index}>
+          <MediaCard {...mediaCardProps} />
+        </li>
+      );
+    }
+  );
+
+  return (
+    items.length ?
+    <ul className="container container-row">{items}</ul> :
+    <p className="no-results">No results found. Please search again.</p>
+  );
 }

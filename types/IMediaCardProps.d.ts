@@ -1,8 +1,8 @@
 interface IMediaCardProps {
-	imageSrc: string;
-    imageAlt: string;
+	imageSrc?: string;
+    imageAlt?: string;
     title: string;
-    text: string;
+    text?: string;
     buttonText: string;
     link: string;
 }

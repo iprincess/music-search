@@ -6,7 +6,7 @@ export const MediaCard = (props:IMediaCardProps) => {
     <a href={props.link} className="card card-clickable flex-container flex-col ">
       <img src={props.imageSrc} alt={props.imageAlt} />
       <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
+        <p className="card-title">{props.title}</p>
         <p className="card-text">{props.text}</p>
       </div>
     </a>

@@ -35,16 +35,12 @@ export const SearchContainer = (props:ISearchPageProps) => {
 
   return (
     <div className="search-container">
-      <div>
-        <SearchForm 
-          query={query} 
-          onQueryChangeHandler={onQueryChangeHandler} 
-          placeholder={props.searchFormPlaceholder}
-          />
-      </div>
-      <div>
-        <props.resultsComponent results={results} />
-      </div>
+      <SearchForm 
+        query={query} 
+        onQueryChangeHandler={onQueryChangeHandler} 
+        placeholder={props.searchFormPlaceholder}
+        />
+      <props.resultsComponent results={results} />
     </div>
   );
 

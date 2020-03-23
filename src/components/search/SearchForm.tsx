@@ -1,3 +1,4 @@
+import './SearchForm.scss';
 import React, { useState } from 'react';
 
 
@@ -14,7 +15,7 @@ export const SearchForm = (props:ISearchFormProps) => {
   }
 
   return (    
-    <form onSubmit={handleSubmit} className="form-inline justify">
+    <form onSubmit={handleSubmit} className="search-form form-inline justify">
       <label className="sr-only" htmlFor="search">Search</label>
       <input
         type="text"

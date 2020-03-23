@@ -1,8 +1,8 @@
 import React from 'react';
 
-export const ITunesBadgeIcon = () => {
+export const AppleMusicLockupIcon = () => {
 	return <img 
-		src="/static/itunes/iTunes_Badge_Icon.svg" 
+		src="/static/apple-music/lockup.svg" 
 		height={40}
-		alt="itunes badge" />
+		alt="Listen on Apple Music" />
 }

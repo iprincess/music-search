@@ -1,4 +1,4 @@
-import './SearchPage.css';
+import './SearchContainer.scss';
 import React, { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import * as musicProvider from '../providers/music-provider';
@@ -6,7 +6,7 @@ import { queryUtil } from '../helpers/queryUtil';
 import { SearchForm } from '../components/search/SearchForm';
 
 
-export const SearchPage = (props:ISearchPageProps) => {
+export const SearchContainer = (props:ISearchPageProps) => {
   const params = useParams();
   const history = useHistory();
   const [query, setQuery] = useState(params.query ? queryUtil.getQueryFromUrlParam(params.query) : '');
@@ -28,13 +28,13 @@ export const SearchPage = (props:ISearchPageProps) => {
           setResults(response.results);
         })
         .catch(error => {
-          console.log("SearchPage music request error", error);
+          console.log("SearchContainer music request error", error);
         })
     }
   }, [query])
 
   return (
-    <div className="search-page">
+    <div className="search-container">
       <div>
         <SearchForm 
           query={query} 

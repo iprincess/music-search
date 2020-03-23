@@ -1,6 +1,6 @@
 import React from 'react';
 import * as musicProvider from '../providers/music-provider';
-import { SearchPage } from './SearchPage';
+import { SearchContainer } from '../containers/SearchContainer';
 import { SearchResultsAlbum } from '../components/search/SearchResultsAlbum';
 
 export const AlbumPage = () => {
@@ -8,7 +8,7 @@ export const AlbumPage = () => {
   let placeholderText = "Search for an album";
 
   return (
-    <SearchPage
+    <SearchContainer
       searchType={searchType}
       searchFormPlaceholder={placeholderText}
       resultsComponent={SearchResultsAlbum}

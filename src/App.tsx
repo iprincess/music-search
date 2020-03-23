@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 import { Header } from './components/header/Header';
 import NotFoundPage from './pages/NotFound';
-import InProgressPage from './pages/InProgress';
+// import InProgressPage from './pages/InProgress';
 import { AlbumPage } from './pages/AlbumPage';
 import { ArtistPage } from './pages/ArtistPage';
 import { SongPage } from './pages/SongPage';

@@ -20,7 +20,7 @@ export const SearchResults =(props:{mediaCardMap: Function; results:any[]}) => {
 
   return (
     items.length ?
-    <ul className="container container-row">{items}</ul> :
+    <ul className="flex-container flex-wrap">{items}</ul> :
     <p className="no-results">No results found. Please search again.</p>
   );
 }

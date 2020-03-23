@@ -1,20 +1,4 @@
 /* app layout */
-.app.container {
+.app {
   padding: 10px;
-  
-}
-/* Small screens */
-@media all and (max-width: 500px) {
-  .app.container {
-    flex-wrap: wrap-reverse;
-  }
-}
-.app.container >.item:first-of-type {
-  order: 0;
-  flex-grow: 10;
-}
-.app.container > .item:last-of-type {
-  order: 1;
-  flex-grow: 2;
-  min-width: 12rem;
 }

@@ -19,9 +19,10 @@
   }
 }
 
-/* large screens */
-@media all and (min-width: 500px) {
+/* small screens */
+@media all and (max-width: 500px) {
   .search-container ul > li {
-    max-width: 12rem;
+    width: 100%;
+    margin-right: 0;
   }
 }

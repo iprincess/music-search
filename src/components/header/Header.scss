@@ -1,0 +1,29 @@
+header {
+  margin-bottom: 20px;
+
+  h1 {
+    line-height: 40px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+  
+  .nav-link, 
+  h3 {
+    padding: .5rem 1rem;
+  }
+  
+  nav a,
+  nav a:visited {
+    text-decoration: none;
+    color: var(--color-highlight);
+  }
+  
+  nav a.active {
+    color: var(--color-text-dark);
+    cursor: default;
+  }
+  
+}
+

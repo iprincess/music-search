@@ -9,9 +9,13 @@ header {
     margin: 0;
   }
   
-  .nav-link, 
-  h3 {
-    padding: .5rem 1rem;
+  nav {
+    padding: 0.5rem;
+  }
+
+  h3,
+  .nav-link {
+    margin-right: 0.5rem;
   }
   
   nav a,

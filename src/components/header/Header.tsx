@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="flex-container flex-col center-items">   
       <ITunesBadgeIcon /> 
       <h1>Apple Music Search </h1>  
-      <nav className="nav flex-container ">
+      <nav className="nav flex-container center-items">
         <h3 className="item">Search by:</h3>
         <NavLink className="nav-link item" to="/artist">Artist</NavLink>
         <NavLink className="nav-link item" to="/album">Album</NavLink>

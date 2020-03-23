@@ -8,7 +8,8 @@ const mediaCardMap = (item:ISong) : IMediaCardProps => {
     title: item.trackName,
     text: `${item.artistName} (${item.collectionName})`,
     buttonText: "View on Apple Music",
-    link: item.trackViewUrl
+    link: item.trackViewUrl,
+    audioFileUrl: item.previewUrl
   }
 }
 

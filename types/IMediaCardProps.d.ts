@@ -5,4 +5,6 @@ interface IMediaCardProps {
     text?: string;
     buttonText: string;
     link: string;
+    audioFileUrl?: string;
+    onAudioClick?: IAudioClick;
 }

@@ -7,12 +7,22 @@ export const SearchResults =(props:{mediaCardMap: Function; results:any[]}) => {
     return null;
   }
 
+  let activeAudioPlayer: React.RefObject<HTMLAudioElement>;
+
+  const onAudioClick = (audioElement:React.RefObject<HTMLAudioElement>) => {
+    // stop current audio player
+    if(activeAudioPlayer) {
+      activeAudioPlayer.current.pause();
+    }
+    activeAudioPlayer = audioElement;
+  };
+
   const items = props.results && props.results.map(
     (item, index) => {
       const mediaCardProps = props.mediaCardMap(item);
       return (
         <li key={index}>
-          <MediaCard {...mediaCardProps} />
+          <MediaCard onAudioClick={onAudioClick} {...mediaCardProps} />
         </li>
       );
     }

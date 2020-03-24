@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <Router forceRefresh={!supportsHistory}>
       <Switch>
-        <Redirect exact path="/" to="/album" />
+        <Redirect exact path="/" to="/song/holiday" />
         <Route path="/album/:query?" component={AlbumPage} />
         <Route path="/artist/:query?" component={ArtistPage} />
         <Route path="/song/:query?" component={SongPage} />

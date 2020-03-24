@@ -22,7 +22,7 @@ export function get<T>(path: string, params?: object): Promise<T> {
       }
     })
     .catch((error) => {
-      console.log(`music-service request failure. error: ${error}`);
+      console.log("music-service request failure. error", error);
       return null;
     });
 }

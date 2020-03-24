@@ -42,7 +42,7 @@ const searchSongAsync = (query): Promise<ISongResponse> => {
   });
 };
 
-const searchEntityAsync = (entity, query): Promise<IAlbumResponse | IArtistResponse> => {
+const searchEntityAsync = (entity, query): Promise<IAlbumResponse | IArtistResponse | ISongResponse> => {
   if(entity === searchTypes.album){
     return searchAlbumAsync(query);
 

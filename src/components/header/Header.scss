@@ -1,34 +1,7 @@
 header {
-  margin-bottom: 20px;
 
   .logo {
     margin-bottom: 10px;
-  }
-
-  span,
-  .nav-link {
-    margin-right: 0.5rem;
-  }
-
-  span {
-    font-weight: bold;
-  }
-
-  nav {
-    padding: 0.5rem;
-
-    a,
-    a:visited {
-      text-decoration: none;
-      color: var(--color-text-dark );
-      border-bottom: 1px solid transparent;
-    }
-  
-    a.active {
-      color: var(--color-highlight);
-      cursor: default;
-      border-bottom: 1px solid var(--color-highlight);
-    }
   }
 }
 

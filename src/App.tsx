@@ -5,8 +5,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import NotFoundPage from './pages/NotFound';
-// import InProgressPage from './pages/InProgress';
+import { NotFoundPage } from './pages/NotFound';
 import { AlbumPage } from './pages/AlbumPage';
 import { ArtistPage } from './pages/ArtistPage';
 import { SongPage } from './pages/SongPage';

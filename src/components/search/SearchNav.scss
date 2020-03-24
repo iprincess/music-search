@@ -14,10 +14,6 @@
 		padding: 5px 0;
 	}
 
-	span {
-		@include activeText();
-	}
-
 	a,
 	a:visited {
 		text-decoration: none;

@@ -24,7 +24,6 @@ export const SearchContainer = (props:ISearchPageProps) => {
     if(query && query !== ''){
       musicProvider.searchEntityAsync(props.searchType, query)
         .then(response => {
-          console.log(response);
           setResults(response.results);
         })
         .catch(error => {

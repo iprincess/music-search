@@ -11,7 +11,6 @@ const searchTypes = {
 const getEncodedUrl = (urlTemplate, query) => {
 	const encodedQuery = encodeURIComponent(query);
 	const url = urlTemplate.replace(/{query}/g, encodedQuery);
-	console.info(url);
 	return url;
 };
 
